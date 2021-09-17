@@ -26,24 +26,22 @@ https://github.com/ViduraPrasangana/pump-it-up.git
 
 ### Replace missing values
 Below columns had 0 for missing values
-* `gps_height` 
+* `gps_height`
 * `population`
-* `amount_tsh` 
-* `longitude` 
-* `latitude` 
-* `construction_year` 
-
-* First replaced with mean of respective region and district_code
-* Remaining null values replaced with mean of region
-* remaining null values replaced with overall median
+* `amount_tsh`
+* `longitude`
+* `latitude`
+* `construction_year`
+First replaced with mean of respective region and district_code
+Remaining null values replaced with mean of region
+Remaining null values replaced with overall median
 
 Only `construction_year` is replaced with median as mean gives year with decimal points
 
 Below categorical column had NaN for missing values
 * `funder` 
 * `scheme_management`
-
-* Replaced with new category `other` 
+Replaced with new category `other` 
 
 ### Normalization 
 Following categories had large values and normalized to 0 - 20 using Min - Max scaler
