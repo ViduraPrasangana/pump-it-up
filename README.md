@@ -32,6 +32,7 @@ Below columns had 0 for missing values
 * `longitude`
 * `latitude`
 * `construction_year`
+
 First replaced with mean of respective region and district_code
 Remaining null values replaced with mean of region
 Remaining null values replaced with overall median
@@ -41,7 +42,11 @@ Only `construction_year` is replaced with median as mean gives year with decimal
 Below categorical column had NaN for missing values
 * `funder` 
 * `scheme_management`
+
 Replaced with new category `other` 
+
+### Used label encoding and one hot encoding to handle categorical data.
+### Transformed all category names to lowercase to avoid issues while encoding.
 
 ### Normalization 
 Following categories had large values and normalized to 0 - 20 using Min - Max scaler
@@ -51,6 +56,8 @@ Following categories had large values and normalized to 0 - 20 using Min - Max s
 
 ## Feature Engineering
 ### Target encoding - Used `ward` feature to target encode. Because, `ward` feature has many unique values.
+### Created new features by transfomations.
+* new column named `no_working_years` created from `date_recorded` and `construction_year`
 
 
 ## Experimented Models
