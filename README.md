@@ -1,4 +1,4 @@
-# Pump-it-Up-Data-Mining-the-Water-Table-Competition
+# Pump it Up Data Mining the Water Table Competition
 https://github.com/ViduraPrasangana/pump-it-up.git
 
 ## Preprocessing 
